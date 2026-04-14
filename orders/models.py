@@ -56,7 +56,7 @@ class Order(models.Model):
         blank=True
     )
 
-    number = models.CharField(max_length=20, unique=True, editable=False)
+    number = models.CharField(max_length=25, unique=True, editable=False)
     created = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=20, choices=STATUSES, default='new')
 
